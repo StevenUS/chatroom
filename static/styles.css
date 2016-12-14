@@ -1,0 +1,30 @@
+.modal_input{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#chat{
+    height: 50vh;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+#users{
+    height: 50vh;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.chat_input{
+    width: 84%;
+}
+.btn2{
+    width: 15%;
+}
+.userEnter{
+    color: lightgreen;
+    font-weight: bold;
+}
+.userLeft{
+    color: red;
+    font-weight: bold;
+}

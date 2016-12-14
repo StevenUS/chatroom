@@ -1,0 +1,66 @@
+<html>
+<head>
+<title></title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- server file -->
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <!-- javascript file -->
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body class="container">
+    <div class="page-header">
+        <h1>Chat Room</h1>
+        <p>simple chatroom built using socket.io</p>
+    </div>
+    <div class="row">
+
+        <!-- message box -->
+        <div id="chat" class="col-md-6 col-md-offset-2"></div>
+
+        <!-- list of users online -->
+        <div id="users" class="col-md-2">
+            <h3>Users</h3>
+            <div id="user_list">
+            </div>
+        </div>
+    </div>
+
+    <!-- message input -->
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-6 col-lg-offset-2">
+            <form class="user_msg">
+                <input class="input-lg chat_input" type="text" name="message">
+                <input class="btn btn-lg btn-default btn2" type="submit" value="sub">
+            </form>
+        </div>
+    </div>
+
+    <!-- *****************modal******************* -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 modal_input">
+                            <label>Input Name</label>
+                            <input id="userName" class="input-lg" type="text">
+                            <button type="button" id="userNameBtn" name="userNameBtn">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *****************modal******************* -->
+
+</div>
+</body>
+</html>
